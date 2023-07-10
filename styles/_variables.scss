@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;600&display=swap');
+
+$font-family: 'Archivo Narrow', sans-serif;
+$font-weight-normal: 400;
+$font-weight-semi-bold: 600;
+
+$cell-padding-horizontal-s: 4px;
+$cell-padding-vertical-s: 8px;
+$cell-padding-horizontal-m: 6px;
+$cell-padding-vertical-m: 10px;
+$cell-padding-horizontal-l: 10px;
+$cell-padding-vertical-l: 14px;
+
+$color-border-table: rgb(208, 208, 208);
+
+$header-border-bottom: 2px solid $color-border-table;
+$cell-border-bottom: 1px solid $color-border-table;
+
+$grid-template-columns: 1fr 3fr 3fr 2fr 40%;
+

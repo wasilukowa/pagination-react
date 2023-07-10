@@ -1,0 +1,24 @@
+@import "../../../../../../../styles/variables";
+@import "../../../styles/variables";
+
+.wrapper {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: $grid-template-columns;
+
+    max-width: 95vw;
+
+    min-width: 320px;
+
+    width: 100%;
+    font-size: $font-size-m;
+    font-family: $font-family;
+
+    &Header {
+        border-bottom: $header-border-bottom;
+        font-weight: $font-weight-semi-bold;
+        text-align: left;
+        padding: $cell-padding-vertical-s $cell-padding-horizontal-s;
+    }
+}
+

@@ -1,0 +1,23 @@
+@import "./base.module.scss";
+@import "../../../../../../../../styles/variables";
+@import "../../../../../../../../styles/breakpoints";
+
+
+@media (min-width: $breakpoint-1) {
+    .wrapper {
+
+        &PageNumber {
+            font-size: $font-size-m;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-2) {
+    .wrapper {
+        
+        &PageNumber {
+            font-size: $font-size-l;
+            margin: 3px;
+        }
+    }
+}

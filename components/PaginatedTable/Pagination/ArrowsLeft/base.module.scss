@@ -1,0 +1,30 @@
+@import "../../../../../../../../styles/variables";
+
+.wrapper {
+    display: flex;
+
+    &Button{
+        background-color: $pagination-button-color;
+        border-radius: 3px;
+        margin: 2px;
+        outline: none;
+        border: none;
+
+        &:hover {
+            background-color: $pagination-button-color-hoover;
+            cursor: pointer;
+        }
+
+        &:disabled {
+            background-color: rgb(185, 185, 185);
+            cursor: auto;
+        }
+    }
+
+    &Image {
+        width: 12px;
+        height: 12px;
+        padding: 4px 2px 6px 2px;
+        transform: rotate(180deg);
+    }
+}

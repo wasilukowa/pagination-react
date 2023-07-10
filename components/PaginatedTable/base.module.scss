@@ -1,0 +1,9 @@
+.wrapper {
+    width: 100%;
+    position: relative;
+
+    &Table {
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+}

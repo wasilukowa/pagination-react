@@ -1,0 +1,10 @@
+@import "./base.module.scss";
+@import "../../../../../../styles/breakpoints";
+
+@media (min-width: $breakpoint-2) {
+    .wrapper {    
+        &Table {
+            overflow: auto;
+        }
+    }
+}
