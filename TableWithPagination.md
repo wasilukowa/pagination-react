@@ -4,4 +4,4 @@
 
 #### JavaScript, React, TypeScript
 
-![https://github.com/wasilukowa/pagination-react/blob/master/src/pagination.png?raw=true]
+!![pagination_screen](https://github.com/wasilukowa/pagination-react/blob/master/src/pagination.png?raw=true)
