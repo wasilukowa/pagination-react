@@ -2,24 +2,5 @@
 @import "../../../styles/variables";
 
 .wrapper {
-    margin: 5px;
-    display: grid;
-    grid-template-columns: $grid-template-columns;
-
-    max-width: 95vw;
-
-    min-width: 320px;
-
-    width: 100%;
-    font-size: $font-size-m;
-    font-family: $font-family;
-
-    &Cell {
-        border-bottom: $cell-border-bottom;
-        font-family: $font-family;
-        font-weight: $font-weight-normal;
-        text-align: left;
-        padding: $cell-padding-vertical-s $cell-padding-horizontal-s;
-    }
+    width: 100%
 }
-

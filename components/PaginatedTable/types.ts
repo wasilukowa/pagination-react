@@ -13,14 +13,16 @@ export type PaginatedTableProps = {
     data: TPerson[]
 }
 
-export type usePaginationReturnProps = { 
+export type UsePaginationReturnProps<T> = { 
+    preparedData: T[],
     actualPageIndex: number, 
     lastPageIndex: number, 
     isBusy: boolean, 
     paginationRange: (number | 'DOTS')[],
-    preparedData: TPerson[],
     errorMessage: string,
     goToPage: (page: number) => void,
 }
 
-export type TUsePagination = (data: TPerson[], entriesOnPage: number, siblingCount: number) => usePaginationReturnProps
+export type TUsePagination = <T>(data: T[], entriesOnPage: number, siblingCount: number) => UsePaginationReturnProps<T>
+// export const usePagination = <T>(data: T[], entriesOnPage: any, siblingCount: any): UsePaginationReturnProps<T>  => {
+// 

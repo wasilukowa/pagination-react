@@ -1,7 +1,4 @@
-import { TPerson } from "../components/PaginatedTable/types";
-
 import { TOptions } from "./types";
-
 
 const isValidPageNumber = (pageNumber: number): boolean => {
     const isPositiveNumber = pageNumber >= 0;
@@ -17,7 +14,7 @@ const isValidNumberOfEntries = (numberOfEntries: number): boolean => {
     return (isPositiveNumber || isInteger);
 }
 
-export const getLastIndex = (dataEntries: TPerson[], entriesOnPage: number) => {
+export const getLastIndex = <T>(dataEntries: T[], entriesOnPage: number) => {
     
     const isEntriesNumberValid = isValidNumberOfEntries(entriesOnPage);
     const isDataEmpty = dataEntries.length === 0;
@@ -31,7 +28,7 @@ export const getLastIndex = (dataEntries: TPerson[], entriesOnPage: number) => {
     return lastIndex;
 }
 
-export const getPieceOfData = (dataEntries: TPerson[], options: TOptions) => {
+export const getPieceOfData = <T>(dataEntries: T[], options: TOptions) => {
 
     const { actualPageIndex, lastPageIndex, entriesOnPage } = options;
 

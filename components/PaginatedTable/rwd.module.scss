@@ -8,3 +8,11 @@
         }
     }
 }
+
+@media (min-width: $breakpoint-3) {
+    .wrapper {    
+        &Table {
+            overflow: auto;
+        }
+    }
+}

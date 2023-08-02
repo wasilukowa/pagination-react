@@ -1,14 +1,13 @@
-import { Pagination } from "./Pagination";
 import { usePagination } from "./usePaginationHook";
-
 import { PaginatedTableProps } from "./types";
+
+import { Pagination } from "./Pagination";
 import { SpinnerLoader } from "./LoadingSpinner";
+import { Table } from "./Table";
+import { ErrorMessage } from "./ErrorMessage";
 
 import style from "./rwd.module.scss";
-import { TableHeader } from "./TableHeader";
-import { TableBody } from "./TableBody";
-import { ErrorMessage } from "./ErrorMessage";
-const { wrapper, wrapperTable } = style;
+const { wrapper } = style;
 
 export const PaginatedTable = ({headers, entriesOnPage, siblingCount, data}: PaginatedTableProps) => {
 
@@ -28,10 +27,7 @@ export const PaginatedTable = ({headers, entriesOnPage, siblingCount, data}: Pag
         <div className={wrapper}>
             { isError && <ErrorMessage message={errorMessage}/>}
             { isBusy && <SpinnerLoader/>}
-            <div className={wrapperTable}>
-            <TableHeader headers={headers}/>
-            <TableBody data={preparedData}/>
-            </div>
+            <Table headers={headers} data={preparedData} />
             <Pagination 
                 actualPageIndex={actualPageIndex}
                 lastPageIndex={lastPageIndex}

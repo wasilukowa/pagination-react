@@ -1,9 +1,14 @@
 import { useCallback, useMemo, useState } from "react";
 
 import { getArrayInRange, getLastIndex, getPieceOfData } from "../../utils"; 
-import { TUsePagination } from "./types";
+import { TUsePagination, UsePaginationReturnProps } from "./types";
+
+type SingleTestEntry = {
+    name: string
+}
 
 export const usePagination: TUsePagination = (data, entriesOnPage, siblingCount)  => {
+// export const usePagination = <T>(data: T[], entriesOnPage: any, siblingCount: any): UsePaginationReturnProps<T>  => {
 
     const [ actualPageIndex, setActualPageIndex] = useState(0);
     const [isBusy, setIsBusy] = useState(false);

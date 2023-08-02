@@ -1,7 +1,9 @@
 import style from "./rwd.module.scss";
 const { wrapper } = style;
 
-export const ErrorMessage = ({message}) => {
+import { ErrorMessageProps } from "./types";
+
+export const ErrorMessage = ({message}: ErrorMessageProps) => {
     return (
         <div className={wrapper}>{message}</div>
     )
